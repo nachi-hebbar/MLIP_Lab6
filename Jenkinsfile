@@ -25,7 +25,7 @@ pipeline {
                 sudo /opt/conda/bin/conda create -n my_env python=3.8 -y
                 sudo /opt/conda/bin/conda activate my_env
 
-                conda install pytest numpy pandas scikit-learn -y
+                sudo /opt/conda/bin/conda install pytest numpy pandas scikit-learn -y
                 pytest
 
                 echo 'pytest not runned'
