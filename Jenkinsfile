@@ -22,6 +22,7 @@ pipeline {
                 # TODO Complete the command to run pytest
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
                 #sudo /opt/conda/bin/conda run -n <Envinronment Name> pytest
+                conda install numpy pandas scikit-learn -y
                 pytest
 
                 echo 'pytest not runned'
