@@ -17,15 +17,21 @@ pipeline {
 
                 # TODO fill out the path to conda here
                 # sudo /PATH/TO/CONDA init
-                sudo /opt/conda/bin/conda init
+                #sudo /opt/conda/bin/conda init
 
                 # TODO Complete the command to run pytest
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
                 #sudo /opt/conda/bin/conda run -n <Envinronment Name> pytest
-                sudo /opt/conda/bin/conda create -n my_env python=3.8 -y
-                sudo /opt/conda/bin/conda activate my_env
+                #sudo /opt/conda/bin/conda create -n my_env python=3.8 -y
+                #sudo /opt/conda/bin/conda activate my_env
 
-                sudo /opt/conda/bin/conda install pytest numpy pandas scikit-learn -y
+
+
+                #sudo /opt/conda/bin/conda install pytest numpy pandas scikit-learn -y
+
+                python --version
+                pip --version
+                python -m pip install pytest numpy pandas scikit-learn
                 pytest
 
                 echo 'pytest not runned'
